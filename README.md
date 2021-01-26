@@ -6,7 +6,7 @@
 - Matrícula: 17.2.8207
 - Curso: Engenharia de Computação
 - Semestre/Ano correntes: 7º Semestre/4º ano
-- Link para o seu GitHub: github.com/LucasPereiraMiranda
+- Link para o seu GitHub: [github.com/LucasPereiraMiranda](https://github.com/LucasPereiraMiranda)
 
 ## [Projeto final:](./Projeto/README.md) 
 
