@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <title>Cadastro de Pessoas</title>
+  </head>
+  <body>
+    <header>
+      <h1>Sistema de banco de dados web</h1>
+      <nav>
+        <a href="home.html">Home</a>
+        <a href="pessoas.html">Pessoas</a>
+        <a href="estados.html">Estados</a>
+        <a href="cidades.html">Cidades</a>
+        <a href="produtos.html">Produtos</a>
+        <a href="perfil.html">Perfil</a>
+        <a href="sair.html">Sair</a>
+      </nav>
+    </header>
+    <main>
+      <div>
+        <h2><strong>Página de cadastro de Pessoas</strong></h2>
+        <p>Adicione as informações das pessoas no sistema web</p>
+      </div>
+    </main>
+    <section>
+      <div>
+        <h3>Cadastro de Pessoas</h3>
+        <form method="POST" action="submit">
+          <div>
+            <label for="name">Nome:</label>
+            <input type="text" name="name" id="name" placeholder="Adicione seu nome">
+          </div>
+          <div>
+            <label for="user">Usuário:</label>
+            <input type="text" name="user" id="user" placeholder="Adicione seu usuário">
+          </div>
+          <div>
+            <label for="email">E-mail:</label>
+            <input type="email" name="email" id="email" placeholder="Adicione seu e-mail">
+          </div>
+          <div>
+            <label for="adress">Endereço:</label>
+            <input type="text" name="adress" id="adress" placeholder="Digite seu endereço">
+          </div>
+          <div>
+            <label for="cpf">CPF:</label>
+            <input type="text" name="cpf" id="cpf" placeholder="Digite o seu CPF">
+          </div>
+          <div>
+            <label for="document-file">Anexe o seu documento</label>
+            <input type="file" name="document-file" id="document-file">
+          </div>
+          <input type="submit" value="Cadastrar">
+          <input type="reset" value="Limpar">
+        </form>
+      </div>
+    </section>
+    <br />
+    <br />
+    <footer>
+      <div>2021.Todos os direitos reservados</div>
+    </footer>
+  </body>
+</html>
