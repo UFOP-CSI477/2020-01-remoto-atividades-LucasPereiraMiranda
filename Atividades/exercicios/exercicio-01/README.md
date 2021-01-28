@@ -1,4 +1,7 @@
-# Atividade 1 - Introdução ao HTML
+# Atividades
 
-Atividade relativa a vídeo-aula 1
+Atividade relativa as vídeo-aulas 1,2 e 3
 
+- Introdução ao HTML
+- Forms no HTML
+- Tabelas no HTML
