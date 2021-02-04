@@ -1,0 +1,44 @@
+table{
+  width:100%;
+}
+
+table,th,td{
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th,td{
+  padding: 10px;
+}
+
+th{
+  font-size: 14px;
+  font-family: Tahoma, Geneva, Verdana, sans-serif;
+  font-style: italic;
+}
+
+caption{
+  font-size: 30px;
+  font-family: Tahoma;
+  font-weight: bold;
+}
+
+thead tr:hover{
+  background-color: blue;
+}
+
+tbody tr:hover{
+  background-color: #c6c6c6;
+}
+
+tfoot tr:hover{
+  background-color: green;
+}
+
+tbody tr:nth-child(odd){
+  /* an + b */
+  background-color: yellow;
+}
+
+tbody tr td{
+  text-align: center;
+}
