@@ -1,0 +1,36 @@
+.report{
+  padding: 2rem;
+  flex-flow: column ;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  min-height: 30rem;
+  height: auto;
+  width: auto;
+}
+
+.report table{
+  text-align: center;
+  padding: 0 1rem;
+}
+
+.report table,td,th{
+  width: 100%;
+  border: 0.1rem solid #c44536;
+  border-collapse: collapse;
+}
+
+.report table caption{
+  font-size: 30px;
+  font-family: Tahoma;
+  font-weight: bold;
+}
+
+.report table thead tr{
+  background-color: #c44536;
+}
+
+.report table tbody tr:nth-child(odd){
+  background-color: #DDD;
+}

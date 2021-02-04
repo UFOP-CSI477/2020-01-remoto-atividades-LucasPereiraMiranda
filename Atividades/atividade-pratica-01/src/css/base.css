@@ -7,10 +7,9 @@ body {
   font-size: 1.25rem;
   font-weight: 2.5rem;
   max-width: 100%; 
-  min-height: 100%;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  height: 100vh;
   color: #000;
 }
 
