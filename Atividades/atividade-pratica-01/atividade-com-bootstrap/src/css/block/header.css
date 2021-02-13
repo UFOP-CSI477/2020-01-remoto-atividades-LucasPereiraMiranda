@@ -1,0 +1,26 @@
+header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  background-color: #1b263b;
+  border: #772e25 solid 0.05rem;
+  height: 6rem;
+}
+
+header .navbar{
+  padding-top: 1rem;
+}
+
+header .navbar > .nav-item{
+  margin-left: 0.5rem;
+}
+
+header .navbar .nav-item{
+  color:#c44536;
+}
+
+header .navbar .nav-item:hover{
+  color:#dddddd;
+  transition: ease 0.2s;
+}

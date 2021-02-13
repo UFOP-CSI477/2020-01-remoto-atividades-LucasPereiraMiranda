@@ -1,0 +1,25 @@
+.infos-section{
+  min-height: 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: row;
+  flex-wrap: row wrap;
+  padding: 2rem;
+}
+
+.infos-section .image-wrapper{
+  border-radius: 50%;
+  border: 0.3rem solid #1B263B;
+  overflow: hidden;
+  max-width: 18rem;
+}
+
+.infos-section .image-wrapper:hover{
+  border-color: #c44536;
+  transition: ease 0.2s;
+}
+
+.infos-section .image-wrapper img{
+  position: relative;
+}

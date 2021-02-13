@@ -1,0 +1,64 @@
+.form-wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 20rem;
+  width: auto;
+}
+
+.form-wrapper form{
+  margin-top: 2rem;
+  padding: 0.5rem;
+  border: 0.1rem solid #c44536;
+  background-color: #E9E0DF;
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  flex-direction: column;
+}
+
+.form-wrapper form div{
+  display: flex;
+  flex-wrap: row wrap;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  margin-top: 0.4rem;
+  width: 100%;
+}
+
+.form-wrapper form input{
+  width: 70%;
+  height: 2rem;
+  border-style:ridge;
+}
+
+.form-wrapper form input[type="text"] {
+  background-color: #f0f0f0;
+}
+
+.form-wrapper form input[type="email"]{
+  background-color: #f0f0f0;
+}
+
+.form-wrapper form input[type="submit"]{
+  margin-top: 1rem;
+  background-color: #1b263b;
+  color:#f0f0f0;
+}
+
+.form-wrapper form input[type="submit"]:hover{
+  background-color: #1b262b;
+  transition: ease 0.2s;
+}
+
+.form-wrapper form input[type="reset"]{
+  background-color: #1b263b;
+  color:#c44536;
+}
+
+.form-wrapper form input[type="reset"]:hover{
+  background-color: #1b262b;
+  transition: ease 0.2s;
+}

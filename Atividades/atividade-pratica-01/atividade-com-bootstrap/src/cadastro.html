@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <title>Cadastro de Pessoas</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/block/header.css">
+    <link rel="stylesheet" href="./css/block/main.css">
+    <link rel="stylesheet" href="./css/block/form.css">
+    <link rel="stylesheet" href="./css/block/footer.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  </head>
+  <body >
+    <header class="container-fluid">
+      <h1 class="display-6">Sistema de banco de dados web</h1>
+      <nav class="breadcrumb">
+        <a class="breadcrumb-item text-white" href="home.html">Home</a>
+        <a class="breadcrumb-item text-white" href="pessoas.html">Pessoas</a>
+        <a class="breadcrumb-item text-white" href="estados.html">Estados</a>
+        <a class="breadcrumb-item text-white" href="cidades.html">Cidades</a>
+        <a class="breadcrumb-item text-white" href="produtos.html">Produtos</a>
+        <a class="breadcrumb-item text-white" href="perfil.html">Perfil</a>
+        <a class="breadcrumb-item text-white" href="sair.html">Sair</a>
+      </nav>
+    </header>
+    <main>
+      <div>
+        <h2><strong>Página de cadastro de Pessoas</strong></h2>
+        <p>Adicione as informações das pessoas no sistema web</p>
+      </div>
+    </main>
+    <section class="form-wrapper">
+        <form method="POST" action="submit">
+          <div>
+            <label for="name">Nome</label>
+            <input type="text" name="name" id="name" placeholder="Adicione seu nome">
+          </div>
+          <div>
+            <label for="user">Usuário</label>
+            <input type="text" name="user" id="user" placeholder="Adicione seu usuário">
+          </div>
+          <div>
+            <label for="email">E-mail</label>
+            <input type="email" name="email" id="email" placeholder="Adicione seu e-mail">
+          </div>
+          <div>
+            <label for="adress">Endereço</label>
+            <input type="text" name="adress" id="adress" placeholder="Digite seu endereço">
+          </div>
+          <div>
+            <label for="cpf">CPF</label>
+            <input type="text" name="cpf" id="cpf" placeholder="Digite o seu CPF">
+          </div>
+          <div>
+            <label for="document-file">Anexe foto</label>
+            <input type="file" name="document-file" id="document-file">
+          </div>
+          <input type="submit" value="Cadastrar">
+          <input type="reset" value="Limpar">
+        </form>
+      
+    </section>
+    <br />
+    <br />
+    <footer class="container-fluid">
+      <div>2021.Todos os direitos reservados</div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+  </body>
+</html>
