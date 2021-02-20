@@ -28,6 +28,17 @@
                     console.log(i);
                 }
             }
+
+            function carregarDadosForm(){
+                const nome = document.frmDados.nome.value;
+                const sobrenome = document.frmDados.sobrenome.value;
+
+                const pessoa = new Pessoa(nome,sobrenome);
+                console.log(pessoa);
+
+                window.alert(`Dados carregados com sucesso\n${pessoa.nome} ${pessoa.sobrenome}`);
+            }
+
         </script>
     </head>
     <body>
@@ -39,6 +50,13 @@
             <div id="data"></div>
             <div id="nome"></div>
         </div>
-        <input type="button" value="Carregar dados" onclick="carregarDados()">
+
+        <form action="POST" name="frmDados">
+            <input type="text" name="nome">
+            <input type="text" name="sobrenome">
+        </form>
+
+        <input type="button" value="Carregar" onclick="carregarDados()">
+        <input type="button" value="Carregar dados do form" onclick="carregarDadosForm()">
     </body>
 </html>
