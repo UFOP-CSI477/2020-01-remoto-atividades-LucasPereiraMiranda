@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Atividade prática de  JS prompt-01</title>
+
+        <style>
+            *{
+                padding: 0;
+                margin: 0;
+                box-sizing: border-box;
+            }
+
+            body{
+                background: #fff;
+                font-family: Arial,Helvetica, sans-serif;
+                text-rendering: optimizeLegibility !important;
+                -webkit-font-smoothing: antialiased !important;
+                font-size: 1.25rem;
+                font-weight: 2.5rem;
+                max-width: 100%;
+                min-height: 100vh;
+                max-width: 100%; 
+                min-height: 100vh;
+                display: flex;
+                flex-direction: column;
+            }
+
+            #header{
+                display:flex;
+                align-items: center;
+                justify-content: center;
+                background-color: brown;
+                color:#f0f0f0;
+                padding: 2rem;
+            }
+
+            #main{
+                display:flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 2rem;
+                background-color: lavender;
+                flex:1;
+            }
+
+            #main .form-wrapper{
+                display: flex;
+                align-items: center;
+                justify-content: center; 
+                flex-direction: column;
+                width: 50%;
+                padding: 2rem;
+            }
+
+            #main .form-wrapper h2{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                line-height: 3.0rem;
+                font-size: 1.5rem;;
+            }
+
+            #main .form-wrapper form .label-input-wrapper{
+                display:flex;
+                align-items: center;
+                justify-content: space-between;
+                flex-direction: row;
+                margin-top:0.5rem;
+            } 
+
+            #main .form-wrapper form .label-input-wrapper:last-child{
+                margin-bottom:1.5rem;
+            } 
+
+            footer{
+                width: 100%;
+                height: 5rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: #c44536;
+            }
+
+        </style>
+
+        <script>
+            'use strict'
+
+            window.onload = inicializar;
+
+            function processoData(){
+                document.getElementById('hora-atual').innerHTML = obterHoraFormatada();
+            }
+
+            function obterHoraFormatada(){
+                const date = new Date();
+                const formattedDate = `${date.getHours()}:${date.getMinutes()}:${date.getSeconds()}`;
+                return formattedDate;
+            }
+            
+
+            function inicializar(){
+                id = setInterval(processoData,1000);
+            }
+
+            function Pessoa(nome,sobrenome,idade,endereco){
+                this.nome = nome;
+                this.sobrenome = sobrenome;
+                this.idade = idade;
+                this.endereco = endereco;
+            }
+
+            function carregarDadosForm(){
+
+                const name = document.frmDados.nome.value;
+                const sobrenome = document.frmDados.sobrenome.value;
+                const idade = document.frmDados.idade.value;
+                const endereco = document.frmDados.endereco.value;
+
+                const pessoa = new Pessoa(name,sobrenome,idade,endereco);
+
+                document.getElementById('nome-result').innerHTML = `Nome: ${pessoa.nome}`;
+                document.getElementById('sobrenome-result').innerHTML = `Sobrenome: ${pessoa.sobrenome}`;
+                document.getElementById('idade-result').innerHTML = `Idade: ${pessoa.idade}`;
+                document.getElementById('endereco-result').innerHTML = `Endereço: ${pessoa.endereco}`;
+            }
+
+            
+        </script>
+    </head>
+    <body>
+        <header id="header">
+            <h1>Atividade prática de JS - 02-form</h1>
+        </header>
+        <main id="main">
+            <div class="form-wrapper">
+                <h2>Digite os seus dados no formulário</h2>
+                <form action="GET" name="frmDados">
+                    <div class="label-input-wrapper">
+                        <label for="nome">Digite o seu nome</label>
+                        <input type="text" name="nome" id="nome">
+                    </div>
+                    <div class="label-input-wrapper">
+                        <label for="sobrenome">Digite o seu sobrenome</label>
+                        <input type="text" name="sobrenome" id="sobrenome">
+                    </div>
+                    <div class="label-input-wrapper">
+                        <label for="idade">Digite a sua idade</label>
+                        <input type="text" name="idade" id="idade">
+                    </div>
+                    <div class="label-input-wrapper">
+                        <label for="endereco">Digite o seu endereço</label>
+                        <input type="text" name="endereco" id="endereco">
+                    </div>
+                </form>
+                <input type="button" value="Carregar Dados do form" onclick="carregarDadosForm()">
+            </div>
+            <div class="form-result">
+                <h2>Após preencher o formulário, os dados aparecerão aqui</h2>
+                <div id="nome-result"></div>
+                <div id="sobrenome-result"></div>
+                <div id="idade-result"></div>
+                <div id="endereco-result"></div>
+            </div>
+        </main>
+        <footer id="footer">
+            <div id="hora-atual">
+                <!-- <script>
+                    document.write(new Date().getFullYear());
+                </script> -->
+            </div>
+        </footer>
+    </body>
+</html>
