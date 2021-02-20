@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JS</title>
+
+        <script>
+            'use strict'
+
+            function Pessoa(nome,sobrenome){
+                this.nome = nome;
+                this.sobrenome = sobrenome;
+            }
+            
+            function carregarDados(){
+
+                const nome = window.prompt("Insira o seu nome");
+                const sobrenome = window.prompt("Insira o seu sobrenome");
+
+                const pessoa = new Pessoa(nome,sobrenome);
+                console.log(pessoa);
+                document.getElementById("data").innerHTML = Date();
+                document.getElementById("nome").innerHTML = pessoa.nome + ' ' + pessoa.sobrenome;
+
+                for(let i=0;i<10;i++){
+                    console.log(i);
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <script>
+            document.write('Hello world!');
+        </script>
+
+        <div id="dados">
+            <div id="data"></div>
+            <div id="nome"></div>
+        </div>
+        <input type="button" value="Carregar dados" onclick="carregarDados()">
+    </body>
+</html>
