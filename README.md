@@ -24,7 +24,7 @@ Um usuário, caso logado, pode cadastrar livros e deixar o seu review com a opin
 
 O sistema, alem de mostrar as recomendações dos livros, tem como objetivo informar estatísticas, como: as categorias mais bem recomendadas/opinadas, os livros mais populares, etc.
 
-O sistema também pode ter um (ou mais) usuários administradores, podendo deletar usuários e livros caso necessário, com o objetivo de fazer a moderação e controle do sistema web.
+O sistema web deve ser capaz de ajudar o usuário a controlar os livros lidos e em espera.
 
-Tecnologias: HTML, CSS, Javascript, Material Design, Laravel, Eloquent ORM, MySQL. 
+Tecnologias: HTML, CSS, Javascript, Laravel, Eloquent ORM, MySQL, React, Next.js. 
 
